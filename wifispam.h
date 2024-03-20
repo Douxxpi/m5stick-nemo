@@ -76,6 +76,19 @@ const char rickrollssids[] PROGMEM = {
   "08 and hurt you\n"
 };
 
+const char pubssid[] PROGMEM = {
+  "https://douxx.xyz\n"
+  "https://douxx.xyz/addab\n"
+  "https://douxx.xyz/mb\n"
+  "Douxx.xyz on discord\n"
+  "https://fluxbot.eu\n"
+  "https://nohello.com\n"
+  "Hello, world !\n"
+  "Hint: don't die\n"
+  "https://clarty.org\n"
+};
+
+
 // run-time variables
 char emptySSID[32];
 char beaconSSID[32];
