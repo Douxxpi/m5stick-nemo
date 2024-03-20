@@ -76,7 +76,7 @@ const char rickrollssids[] PROGMEM = {
   "08 and hurt you\n"
 };
 
-const char pubssid[] PROGMEM = {
+const char pubssids[] PROGMEM = {
   "https://douxx.xyz\n"
   "https://douxx.xyz/addab\n"
   "https://douxx.xyz/mb\n"
