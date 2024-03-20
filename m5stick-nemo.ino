@@ -288,6 +288,10 @@ struct QRCODE {
 
 QRCODE qrcodes[] = {
   { TXT_BACK, "" },
+  { "Douxx", "https://douxx.xyz/" },
+  { "A$troBot", "https://astrobot.douxx.xyz/" },
+  { "MailBot", "https://douxx.xyz/mb/" },
+  { "FluxBot", "https://fluxbot.eu/" },
   { "Rickroll", "https://youtu.be/dQw4w9WgXcQ"},
   { "HackerTyper", "https://hackertyper.net/"},
   { "ZomboCom", "https://html5zombo.com/"},
@@ -1820,7 +1824,12 @@ void wifispam_setup() {
       DISP.printf(" - %d SSIDs:\n", ct);
       DISP.print(rickrollssids);
       break;
-    case 3:
+    case 2:
+      for(str = pubssids; *str; ++str) ct += *str == '\n';
+      DISP.printf(" - %d SSIDs:\n", ct);
+      DISP.print(pubssids);
+      break;
+    case 4:
       DISP.printf(TXT_RND_SSID, ct);
       break;
   }
@@ -1852,6 +1861,13 @@ void wifispam_loop() {
       beaconSpamList(rickrollssids);
       break;
     case 3:
+      len = sizeof(pubssids);
+      while(i < len){
+        i++;
+      }
+      beaconSpamList(pubssids);
+      break;
+    case 4:
       char* randoms = randomSSID();
       len = sizeof(randoms);
       while(i < len){
